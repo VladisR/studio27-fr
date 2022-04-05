@@ -44,7 +44,7 @@
         top 0
         bottom 0
         right 0
-        max-width 480px
+        max-width 575px
         transition 0.2s ease transform
         transform translateX(-100%)
     &__content
@@ -54,10 +54,21 @@
         top 0
         right 65px
         bottom 0
-        padding-top 18px
-        padding-bottom 18px
+        padding-top 20px
+        padding-bottom 20px
         overflow-y auto
-
+        color #000
+        display flex
+        flex-direction column
+    &__top
+        flex none
+    &__title
+        font-family $font2
+        color #000
+        padding-left 15px
+        margin-bottom 6px
+        &:first-child
+            margin-bottom 17px
     &.opened
         visibility visible
         pointer-events auto
@@ -66,7 +77,41 @@
         & ^[0]
             &__container
                 transform translateX(0)
+    &__footer
+        padding 24px 15px 0
+        position relative
+        flex none
+        margin-top auto
+        &:after
+            content ''
+            position absolute
+            left 0
+            top 0
+            right 0
+            height 2px
+            background: linear-gradient(99.65deg, #B8D217 -24.21%, #09BA8F 91.89%);
 
+    &__phone
+        font-size 21px
+        font-weight 500
+        margin-bottom 20px
+        a
+            color #000
+            text-decoration none
+
+    &__address
+        display flex
+        margin-bottom 17px
+        font-size 15px
+        font-weight 400
+        &:last-child
+            margin-bottom 0
+        .svg-icon
+            flex none
+            width 18px
+            height 20px
+            margin-right 11px
+            fill #71DD49
 
     @media (min-width: $mq.lg)
         display none

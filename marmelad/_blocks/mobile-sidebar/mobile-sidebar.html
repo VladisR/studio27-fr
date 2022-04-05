@@ -2,10 +2,36 @@
     <div elem="container">
         <div elem="close" class="js-menu">{{ _icon('close', { tag: 'span' }) }}</div>
         <div elem="content">
-            <div elem="title">Услуги</div>
-            {% set menuClass = "mobile" %}
-            {% include 'main-menu.html' %}
-            <div elem="title">STUDIO15</div>
+            <div elem="top">
+                <div elem="title">Услуги</div>
+                {% set menuClass = "mobile" %}
+                {% include 'main-menu.html' %}
+                <div elem="title">STUDIO15</div>
+                <nav block="main-menu" class="{{menuClass}}">
+                    <ul>
+                        <li><a href="#"><span class="m-tgl">{{ _icon('arr-r', { tag: 'span' }) }}</span>О техценте</a></li>
+                        <li><a href="#"><span class="m-tgl">{{ _icon('arr-r', { tag: 'span' }) }}</span>Контакты</a></li>
+                        <li><a href="#"><span class="m-tgl">{{ _icon('arr-r', { tag: 'span' }) }}</span>Статьи</a></li>
+                        <li><a href="#"><span class="m-tgl">{{ _icon('arr-r', { tag: 'span' }) }}</span>Наши работы</a></li>
+                    </ul>
+                </nav><!-- main-menu -->
+            </div>
+            <div elem="footer">
+                <div elem="phone">
+                    <a href="tel:+74951505042">+7 (495) 150-50-42</a>
+                </div>
+                <div elem="address">
+                    {{ _icon('location-marker', { tag: 'span' }) }}
+                    <div>г. Москва ул. Мельникова, д. 5</div>
+                </div>
+                <div elem="address">
+                    {{ _icon('location-marker', { tag: 'span' }) }}
+                    <div>г. Москва, ул. Твардовского, 8к5</div>
+                </div>
+            </div>
         </div>
     </div>
 </div><!-- mobile-sidebar -->
+
+
+
