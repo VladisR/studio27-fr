@@ -1,21 +1,37 @@
-$system-font = unquote('-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"')
+$system-font = unquote('"Aeroport", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"')
+
+$appWidth  = 1920px
+$appGutter = 67px
+
+$font1 = "Aeroport"
+$font2 = 'Organetto Bold SemiExt'
 
 $colors = {
-  theme: #6fbc95,
-  accent: #BC6F96,
+  theme: #000,
+  accent: #DF5D78,
 }
+
+$color1 = #eee
+$color2 = #eee
+$color3 = #eee
+$color4 = #eee
+$color5 = #eee
+$linksColors = #0023ff
+
+$colorPrimary = $colors.theme
+$colorAccent = $colors.accent
 
 $fonts = {
   base: $system-font,
-  headings: $system-font
+  headings: $font2
 }
 
 $body = {
   fontFamily: $fonts.base,
-  fontSize: 1rem,
-  fontWeight: 400,
-  lineHeight: 1.5,
-  color: #212529,
+  fontSize: 25px,
+  fontWeight: 300,
+  lineHeight: 1.1,
+  color: #727272,
   bgc: #fff
 }
 
@@ -29,7 +45,21 @@ $selectionHeadings = {
   color: #000
 }
 
+
 $placeholders = {
   normal : getColor($body.color, 'hint'),
   focus  : transparent
+}
+
+
+$mq = {
+  s: 414px,
+  sm: 575px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1366px,
+  xxxl: 1440px,
+  sd: 1600px,
+  hd: 1920px
 }

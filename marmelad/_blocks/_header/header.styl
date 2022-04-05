@@ -1,2 +1,69 @@
 .header
-  flex none
+    flex none
+    padding-top 53px
+    &__top
+        position fixed
+        left 0
+        top 0
+        right 0
+        background #fff
+        z-index 1
+        display flex
+        align-items center
+        &-in
+            min-height 54px
+            display flex
+    &__logo
+        font-family $font2
+        font-size 28px
+        width 152px
+        padding-right 15px
+        margin-right auto
+        align-self: center;
+        a, img
+            display block
+    &__burger
+        width 32px
+        height 17px
+        cursor pointer
+        margin-left 19px
+        align-self: center;
+        .svg-icon
+            pointer-events none
+            width 100%
+            height 100%
+            display block
+            fill #000
+    &__phone
+        font-size 0
+        padding-left 15px
+        border-left 1px solid #DACECE
+        display flex
+        align-items center
+        .svg-icon
+            width 21px
+            height 21px
+            fill #000
+    .social-links
+        border-left 1px solid #DACECE
+        padding 0 10px
+        &__item
+            margin-right 12px
+            &:last-child
+                margin-right 0
+    &__search,
+    &__address
+        display none
+    @media (min-width: 375px)
+        &__phone
+            padding-left 18px
+        &__burger
+            margin-left 23px
+        .social-links
+            padding 0 14px
+            &__item
+                margin-right 22px
+
+    @media (min-width: $mq.lg)
+        &__burger
+            display none

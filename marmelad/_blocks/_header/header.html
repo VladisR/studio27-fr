@@ -1,7 +1,39 @@
 <header block="header">
-    <div elem="content">
-        <h1>{{ app.package.name | capitalize}} v{{ app.package.version }}</h1>
-        <p>Bootstrap {{ app.settings.app.bts[app.settings.app.bts.use].code }}</p>
-        <hr>
+    <div elem="top">
+        <div elem="top-in" class="container">
+            <div elem="logo">
+                <a href=""><img src="img/logo.svg" alt=""></a>
+            </div>
+            {% include 'social-links.html' %}
+            <form elem="search">
+                <button>
+                    {{ _icon('search', { tag: 'span' }) }}
+                </button>
+                <input type="search" placeholder="Введите для поиска">
+            </form>
+            <div elem="phone">
+                <a href="tel:+74951505042">
+                    {{ _icon('phone', { tag: 'span' }) }}
+                    +7 (495) 150 50 42
+                </a>
+            </div>
+            <div elem="address">
+                <div elem="address-icon">{{ _icon('location-marker', { tag: 'span' }) }}</div>
+                <div>
+                    г. Москва ул. Мельникова, д. 5
+                </div>
+            </div>
+            <div elem="address">
+                <div elem="address-icon">{{ _icon('location-marker', { tag: 'span' }) }}</div>
+                <div>
+                    г. Москва ул. Мельникова, д. 5
+                </div>
+            </div>
+            <div elem="burger" class="js-menu">{{ _icon('menu', { tag: 'span' }) }}</div>
+        </div>
+    </div>
+    <div elem="content" class="container">
+        {% set menuClass = "desctop" %}
+        {% include 'main-menu.html' %}
     </div>
 </header><!-- header -->
