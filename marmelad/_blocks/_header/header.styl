@@ -16,7 +16,7 @@
         display flex
         align-items center
         &-in
-            min-height 54px
+            min-height 53px
             display flex
     &__logo
         font-family $font2
@@ -57,9 +57,58 @@
             &:last-child
                 margin-right 0
     &__search,
-    &__address-box,
-    &__menu
+    &__address-box
         display none
+
+    &__menu
+        > ul
+            white-space nowrap
+            overflow-x auto
+            margin-left -20px
+            margin-right -20px
+            padding-left 20px
+            padding-right 20px
+            &:after
+                content ''
+                position absolute
+                left 20px
+                right 0
+                bottom 0
+                height 1px
+                background #09BA8F
+            &::-webkit-scrollbar
+                display none
+
+            scrollbar-height none
+            -ms-overflow-style: none;
+            > li
+                display inline-block
+                margin-right 32px
+                &:last-child
+                    margin-right 0
+                > a
+                    font-size 15px
+                    font-weight 400
+                    color #fff
+                    padding-top 16px
+                    padding-bottom 17px
+                    text-decoration none
+                    display block
+                    position relative
+                    padding-right 15px
+                    .svg-icon
+                        width 12px
+                        height 6px
+                        position absolute
+                        right 0
+                        top 50%
+                        fill #A0ADBF
+                        transform translateY(-50%)
+                        svg
+                            transform rotate(-90deg)
+                ul
+                    display none
+
     @media (min-width: 375px)
         &__phone
             padding-left 18px
@@ -169,11 +218,21 @@
             display block
             line-height 0.8
             > ul
-                border-bottom: 1px solid #09BA8F;
+                margin-left 0
+                margin-right 0
+                border-bottom:1px solid #09BA8F;
+                padding-left 0
+                padding-right 0
                 display flex
                 position relative
+                white-space normal
+                overflow-x visible
+                &:after
+                    display none
                 > li
                     // flex-grow 1
+                    margin-right 0
+                    display block
                     &.has-child
                         > a
                             padding-right 25px
@@ -199,9 +258,11 @@
                             height 6px
                             position absolute
                             right 7px
-                            top 50%
+                            top 48%
                             fill #A0ADBF
                             transform translateY(-50%)
+                            svg
+                                transform rotate(0)
 
                     > ul
                         position absolute
@@ -356,8 +417,147 @@
                     > a
                         font-size 19px
                         padding-right 17px
+                        .svg-icon
+                            top 51%
                     > ul
                         > li
                             > a
                                 .mn-item-name
                                     font-size 20px
+
+.header
+    &__fixed
+        position fixed
+        z-index 10
+        left 0
+        top 0
+        right 0
+        display none
+        transform translateY(-110%)
+        transition 0.3s ease transform
+        &.visible
+            transform translateY(0)
+        &-in
+            box-shadow: 0px 4px 13px rgba(35, 42, 49, 0.08);
+            background #fff
+            z-index 1
+        &-content
+            display flex
+            align-items center
+            width 100%
+        & ^[0]
+            &__logo
+                display none
+            &__menu
+                width 100%
+                > ul
+                    border 0
+                    white-space normal
+                    overflow-x: visible;
+                    position static
+                    justify-content center
+                    flex 1
+                    > li
+
+                        line-height 0.9
+                        &:first-child
+                            a
+                                padding-left 0
+                        > a
+                            // display inline
+                            color #000
+                            align-items center
+                            padding 20px 0 20px
+                            min-height 62px
+                            flex none
+                            .svg-icon
+                                top 52%
+                        > ul
+                            &:before
+                                bottom auto
+                                height 100vh
+        .social-links
+            display none
+        @media (min-width: $mq.lg)
+            display block
+        @media (min-width: $mq.xl)
+            & ^[0]
+                &__logo
+                    display block
+                    padding-right 0
+                    width 140px
+                    margin-right 20px
+                    a, img
+                        width 100%
+                &__menu
+                    > ul
+                        justify-content flex-start
+        @media (min-width: $mq.xxl)
+            & ^[0]
+                &__logo
+                    width 169px
+                &__menu
+                    padding-left 0
+                    padding-right 0
+                    > ul
+                        > li
+                            &:last-child
+                                margin-right 0
+                            > a
+                                padding-left 12px
+                                font-size 15px
+                                font-weight 500
+                                .svg-icon
+                                    right 0
+                            > ul
+                                max-width 1920px
+                                left 37px
+                                right 37px
+                                margin-left auto
+                                margin-right auto
+            .social-links
+                display flex
+                margin-left 0
+
+        @media (min-width: $mq.xxxl)
+            &-content
+                min-height 73px
+
+            & ^[0]
+                &__logo
+                    margin-right 46px
+                &__menu
+                    > ul
+                        > li
+                            > a
+                                padding-left 17px
+                                min-height 73px
+            .social-links
+                &__item
+                    margin-right 25px
+                    img
+                        width 27px
+                        max-width 20px
+        @media (min-width: $mq.sd)
+            & ^[0]
+                &__menu
+                    > ul
+                        > li
+                            > a
+                                padding-left 25px
+                                font-size 17px
+                                .svg-icon
+                                    top 54%
+
+        @media (min-width: 1921px)
+            & ^[0]
+                &__menu
+                    > ul
+                        > li
+                            > ul
+                                left 50%
+                                margin-left -923px
+                                width 100%
+                                max-width 1845px
+                                // transform translateX(-50%)
+                                right auto
