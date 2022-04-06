@@ -1,0 +1,22 @@
+.c-bg
+    position relative
+    height 100%
+    &:before
+        content ''
+        position absolute
+        left 9px
+        top 280px
+        height 299px
+        background: #1892C7;
+        filter: blur(614px);
+        left 15px
+        right 0
+        z-index -1
+    @media (min-width: $mq.lg)
+        &:before
+            top 440px
+            width 100%
+            left 50%
+            right auto
+            margin-left -900px
+            max-width 972px

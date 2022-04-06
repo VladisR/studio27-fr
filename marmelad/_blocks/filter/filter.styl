@@ -1,0 +1,49 @@
+.filter
+    padding 29px 21px 32px
+    background #fff
+    margin-bottom 21px
+    &__title
+        font-size 18px
+        margin-bottom 16px
+    &__item
+        margin-bottom 18px
+        select
+            width 100%
+            display block
+        .select2-container
+            display block
+            width 100% !important
+    .brands
+        margin-bottom 0
+        margin-top 20px
+        margin-bottom -5px
+        display none
+    @media (min-width: $mq.md)
+        .brands
+            display block
+    @media (min-width: $mq.lg)
+        margin-bottom 35px
+        &__items
+            display flex
+            margin-left -39px
+
+        &__item
+            width 33.33%
+            padding-left 39px
+        .brands
+            margin-top 2px
+            &__items-title
+                padding-left 0
+                margin-bottom 15px
+            &__item
+                border-left 1px solid #B6B6B6
+                min-height 71px
+                &:first-child
+                    border 0
+            &__items
+                margin-bottom -10px
+
+    @media (min-width: $mq.lg)
+        padding 44px 56px 34px 56px
+        &__title
+            margin-bottom 41px

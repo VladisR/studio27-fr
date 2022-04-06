@@ -10,9 +10,11 @@
         right 0
         position fixed
         min-width 320px
+        z-index 10
     &__top
         background #fff
-        z-index 1
+        z-index 3
+        position relative
         display flex
         align-items center
         &-in
@@ -61,6 +63,8 @@
         display none
 
     &__menu
+        z-index 2
+        position relative
         > ul
             white-space nowrap
             overflow-x auto
@@ -151,7 +155,7 @@
                     color #B8B8B8
 
     @media (min-width: $mq.lg)
-        z-index 1
+        // z-index 1
         &__burger
             display none
         &__address-box
@@ -450,6 +454,8 @@
                 display none
             &__menu
                 width 100%
+                position static
+                z-index auto
                 > ul
                     border 0
                     white-space normal

@@ -1,0 +1,95 @@
+.select {}
+
+.select2-container .select2-selection--single
+    height 44px
+    border-color #B4C5DA
+    border-radius 7px
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+    height 44px
+    padding 0 30px
+    line-height 43px
+    font-size 16px
+    font-weight 400
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+    height 100%
+    width 51px
+    b
+        width 8px
+        height 6px
+        border 0
+        background url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Generator: Adobe Illustrator 25.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 8 5' style='enable-background:new 0 0 8 5;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23000000;%7D%0A%3C/style%3E%3Cg%3E%3Cpath class='st0' d='M3.9,4.7c-0.2,0-0.3-0.1-0.5-0.2l-2.9-3c-0.2-0.3-0.2-0.7,0-0.9c0.3-0.2,0.7-0.2,0.9,0l2.4,2.5l2.4-2.5 c0.2-0.3,0.7-0.3,0.9,0c0.3,0.2,0.3,0.7,0,0.9l-2.9,3C4.2,4.6,4,4.7,3.9,4.7z'/%3E%3C/g%3E%3C/svg%3E") center center no-repeat
+        background-size 100% 100%
+        margin-top -3px
+
+.select2-dropdown
+    border-radius 7px
+    overflow hidden
+    border-color #B4C5DA
+    ul
+        padding-top 10px
+        padding-bottom 10px
+        li
+            padding 6px 30px
+            color #000
+            font-size 14px
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable
+    background $colorAccent
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder
+    color #000
+
+.select2-container--default.select2-container--disabled .select2-selection--single
+    background none
+    opacity 0.3
+
+.it-wr
+    display flex
+    align-items center
+    .it-icon
+        width 22px
+        height 22px
+        text-align center
+        margin-left -15px
+        display flex
+        justify-content center
+        align-items center
+        margin-right 13px
+        img
+            max-height 100%
+            display block
+
+.select2-container--default .select2-results>.select2-results__options
+    max-height 300px
+
+@media (min-width: $mq.lg)
+    .select2-container .select2-selection--single
+        height 66px
+        border-radius 10px
+    .select2-container--default .select2-selection--single .select2-selection__rendered
+        font-size 25px
+        font-weight 300
+        line-height 66px
+        height 66px
+    .select2-container--default .select2-selection--single .select2-selection__arrow
+        b
+            width 12px
+            height 8px
+            margin-top -4px
+            margin-left -6px
+
+    .select2-dropdown ul li
+        font-size 22px
+
+    .select2-dropdown
+        border-radius 10px
+    .it-wr
+        .it-icon
+            width 39px
+            height 39px
+            margin-left -12px
+            margin-right 17px
+select
+    height 44px

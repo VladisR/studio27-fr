@@ -1,0 +1,53 @@
+<form block="filter">
+    <div elem="title" class="h2">Подбор услуг по авто</div>
+    <div elem="items">
+        <div elem="item">
+            <select class="js-select-brand" data-placeholder="Выберите марку авто">
+                <option></option>
+                <option img-name="f-img1">BMW</option>
+                <option img-name="f-img2">BMW</option>
+                <option img-name="f-img3">BMW</option>
+                <option img-name="f-img4">BMW</option>
+                <option img-name="f-img5">BMW</option>
+                <option img-name="f-img6">BMW</option>
+                <option img-name="f-img7">BMW</option>
+                <option img-name="f-img8">BMW</option>
+                <option img-name="f-img9">BMW</option>
+            </select>
+        </div>
+        <div elem="item">
+            <select data-placeholder="Модель" disabled class="js-select js-select-model">
+                <option></option>
+                <option>BMW</option>
+                <option>BMW 1</option>
+                <option>BMW 2</option>
+                <option>BMW 3</option>
+            </select>
+        </div>
+        <div elem="item">
+            <select data-placeholder="Модификация" disabled class="js-select js-select-modification">
+                <option></option>
+                <option>BMW</option>
+                <option>BMW 1</option>
+                <option>BMW 2</option>
+                <option>BMW 3</option>
+            </select>
+        </div>
+    </div>
+    <div block="brands">
+        <div elem="items-title">Популярные</div>
+        <div elem="items">
+            <div elem="item"><a href="#"><img src="files/f-img1.png" alt=""></a></div>
+            <div elem="item"><a href="#"><img src="files/f-img2.png" alt=""></a></div>
+            <div elem="item"><a href="#"><img src="files/f-img3.png" alt=""></a></div>
+            <div elem="item"><a href="#"><img src="files/f-img4.png" alt=""></a></div>
+            <div elem="item"><a href="#"><img src="files/f-img5.png" alt=""></a></div>
+            <div elem="item"><a href="#"><img src="files/f-img6.png" alt=""></a></div>
+            <div elem="item"><a href="#"><img src="files/f-img7.png" alt=""></a></div>
+            <div elem="item"><a href="#"><img src="files/f-img8.png" alt=""></a></div>
+            <div elem="item"><a href="#"><img src="files/f-img9.png" alt=""></a></div>
+            <div elem="item" mods="plus"><a href="#">{{ _icon('plus', { tag: 'span' }) }}</a></div>
+        </div>
+    </div><!-- brands -->
+    <button class="site-button">Подобрать услуги</button>
+</form><!-- filter -->

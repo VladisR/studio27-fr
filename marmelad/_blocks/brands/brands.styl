@@ -1,0 +1,63 @@
+.brands
+    margin-bottom 96px
+    &__title
+        font-size 20px
+        margin-bottom 18px
+        max-width 250px
+    &__items
+        display flex
+        flex-wrap wrap
+        &-title
+            font-size: 15px;
+            line-height 0.9
+            margin-bottom 25px
+
+    &__item
+        width 25%
+        display flex
+        justify-content center
+        align-items center
+        margin-bottom 30px
+        a
+            display block
+        img
+            display block
+            max-height 32px
+            max-width 48px
+
+    &__item
+        &:nth-child(8) ~ .brands__item
+            display none
+    &__item
+        &--plus
+            display flex !important
+            .svg-icon
+                display block
+                fill #09BA8F
+
+    .site-button
+        width 100%
+        font-size 19px
+    @media (min-width: $mq.md)
+        &__item
+            img
+                max-width 80px
+                max-height 52px
+
+    @media (min-width: $mq.lg)
+        margin-bottom 92px
+        &__title
+            max-width 586px
+            margin-bottom 17px
+        &__items-title
+            padding-left 24px
+            font-size 15px
+            margin-bottom 30px
+        &__items
+            margin-bottom 8px
+            margin-left -10px
+        &__item
+            width 10%
+            max-width 138px
+            &:nth-child(8) ~ .brands__item
+                display flex
