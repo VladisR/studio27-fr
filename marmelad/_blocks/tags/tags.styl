@@ -1,0 +1,65 @@
+.tags
+    position relative
+    z-index 1
+    margin-bottom 50px
+    &__title
+        margin-bottom 22px
+        max-width 150px
+    &__items
+        margin-left -20px
+        margin-right -20px
+        padding-left 20px
+        padding-right 20px
+        white-space nowrap
+        overflow-y auto
+        &::-webkit-scrollbar
+            display none
+
+        scrollbar-height none
+        -ms-overflow-style: none;
+    &__item
+        display inline-block
+        padding-right 12px
+        &:last-child
+            padding-right 0
+        a
+            border 1px solid #09BA8F
+            border-radius: 7px;
+            letter-spacing: -0.02em;
+            display block
+            padding 12px 20px
+            font-size 12px
+            color: #09BA8F;
+            font-size 12px
+            text-decoration none
+            font-weight 400
+            transition 0.3s background, 0.3s color
+            &:hover
+                background #09BA8F
+                color #fff
+    @media (min-width: $mq.sm)
+        &__title
+            max-width none
+
+    @media (min-width: $mq.md)
+        &__title
+            margin-bottom 40px
+        &__item
+            a
+                font-size 17px
+
+    @media (min-width: $mq.lg)
+        margin-bottom 71px
+        &__items
+            display flex
+            flex-wrap wrap
+            margin-left -22px
+            margin-right 0
+            padding-left 0
+            padding-right 415px
+            white-space normal
+
+        &__item
+            padding-right 0
+            padding-left 22px
+            margin-bottom 22px

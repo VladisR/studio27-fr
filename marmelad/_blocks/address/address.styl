@@ -1,0 +1,135 @@
+.address
+    margin-bottom 21px
+    &__head
+        display flex
+        align-items center
+        margin-bottom 17px
+        .h2
+            margin-bottom 0
+    .link
+        display none
+    .site-button
+        width 100%
+        min-height 46px
+        font-size 16px
+        .svg-icon
+            margin-top 1px
+            width 23px
+            height 16px
+            margin-left 30px
+    &__map
+        background #F8F8F8
+        overflow hidden
+        height 289px
+        margin-bottom 23px
+        border-radius 8px
+        &.fullscreen
+            & ^[0]
+                &__map-content
+                    position fixed
+                    left 0
+                    top 0
+                    right 0
+                    bottom 0
+                    height 100%
+                    z-index 10
+                &__map-buttons
+                    top auto
+                    left 40px
+                    bottom 40px
+                &__map-btn
+                    &--fullscreen
+                        position fixed
+                        right 0
+                        top 0
+                        margin-top 0
+                        width 70px
+                        height 70px
+                        .svg-icon
+                            display none
+                            &--close
+                                display block
+
+    &__map
+        position relative
+        &-in,
+        &-content
+            position absolute
+            left 0
+            top 0
+            right 0
+            bottom 0
+
+        &-buttons
+            position absolute
+            left 21px
+            top 21px
+            width 48px
+            display none
+            z-index 1
+        &-btn
+            width 48px
+            height 40px
+            display flex
+            justify-content center
+            align-items center
+            background #fff
+            cursor pointer
+            &:hover
+                background: linear-gradient(99.65deg, #DBFF00 -24.21%, #09BA8F 91.89%);
+                .svg-icon
+                    fill #fff
+            .svg-icon
+                fill #000
+                width 20px
+                height 20px
+            &.btn-plus
+                border-radius: 3px 3px 0 0;
+            &.btn-minus
+                border-radius: 0 0 3px 3px;
+            &--fullscreen
+                margin-top 28px
+                border-radius: 3px;
+                .svg-icon
+                    &--close
+                        display none
+    &__items
+        padding-left 26px
+    &__item
+        margin-bottom 17px
+        display flex
+        font-size 15px
+        color #000
+        font-weight 400
+        .svg-icon
+            fill #71DD49
+            width 18px
+            height 21px
+            margin-right 11px
+            margin-top -2px
+    @media (min-width: 375px)
+        .site-button
+            font-size 18px
+
+    @media (min-width: $mq.lg)
+        margin-bottom 49px
+        &__head
+            margin-bottom 50px
+        &__map
+            height 352px
+            margin-bottom 49px
+            &-buttons
+                display block
+
+        &__items
+            display none
+
+        .site-button
+            font-size 23px
+            padding-top 8px
+            padding-bottom 12px
+            min-height 56px
+            .svg-icon
+                margin-top 5px
+                width 27px
+                height 17px

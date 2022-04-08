@@ -1,0 +1,65 @@
+.list-block
+    position relative
+    z-index 1
+    background #192329 url(../img/list-block-bg.jpg) 0 bottom no-repeat
+    &__in
+        padding-top 27px
+        padding-bottom 24px
+    &__head
+        margin-bottom 23px
+        display flex
+        align-items center
+        flex-wrap wrap
+        &-row
+            width 100%
+            display flex
+            align-items center
+    &__title
+        color #fff
+        margin-bottom 0
+
+    .link
+        display none
+
+    @media (min-width: $mq.md)
+        .link
+            display inline-flex
+    @media (min-width: $mq.lg)
+        &__in
+            padding-top 75px
+            padding-bottom 50px
+        &__head
+            margin-bottom 65px
+        &__title
+            max-width 561px
+            margin-bottom 0
+
+    @media (min-width: $mq.xxl)
+        &__in
+            padding-bottom 100px
+
+.list-block
+    &.type-2
+        background none
+        & ^[0]
+            &__in
+                padding-bottom 27px
+            &__title
+                color #000
+                max-width none
+
+            &__overtitle
+                display block
+                font-size 18px
+                font-family $fonts.base
+                font-weight 300
+                margin-top 12px
+            @media (min-width: $mq.lg)
+                &__in
+                    padding-bottom 50px
+            @media (min-width: $mq.xxl)
+                &__in
+                    padding-bottom 60px
+        @media (min-width: $mq.xxl)
+            .swiper-parent .swiper
+                padding-right 120px

@@ -16,9 +16,85 @@ layout: !!map
 		<div class="container">
 			{% include 'banners.html' %}
 			{% include 'filter.html' %}
-
 		</div>
-
+		{% include 'services.html' %}
+		<div class="container">
+ 			{% include 'tags.html' %}
+		</div>
+		{% include 'list-block.html' %}
+		{% include 'list-block2.html' %}
+		<div block="list-block" class="type-2">
+		    <div elem="in" class="container">
+		        <div elem="head">
+		        	<div elem="head-row">
+			            <h2 elem="title" class="h2">
+			            	Проекты
+			            </h2>
+			            <a block="link" href="#">Смотреть все работы {{ _icon('arr-r3', { tag: 'span' }) }}</a>
+		            </div>
+		            <span elem="overtitle">Выполненые работы</span>
+		        </div>
+		        <div elem="container" class="swiper-parent">
+		            <div elem="items" class="js-list-carousel swiper">
+		                <div elem="items-in" class="swiper-wrapper">
+		                	{% for i in range(0, 2) %}
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img1.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Полная перетяжка салона BMW Z650</span>
+							        <div elem="text">Стоимость услуг -  7,800 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img2.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+							        <div elem="text">Стоимость услуг -  21,000 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img3.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Полная перетяжка салона BMW Z650</span>
+							        <div elem="text">Стоимость услуг -  7,800 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img4.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+							        <div elem="text">Стоимость услуг -  21,000 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img5.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+							        <div elem="text">Стоимость услуг -  21,000 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							{% endfor %}
+		                </div>
+	                    <div class="swiper-button swiper-button-prev">{{ _icon('arr-l3', { tag: 'span' }) }}</div>
+	                    <div class="swiper-button swiper-button-next">{{ _icon('arr-r3', { tag: 'span' }) }}</div>
+		                <div class="swiper-scrollbar color2"></div>
+		                <div class="swiper-pagination"></div>
+		            </div>
+		        </div>
+		    </div>
+		</div><!-- list-block -->
 
 	</div>
+
+	<div class="container">
+		{% include 'address.html' %}
+	</div>
+	{% include 'map-fullscreen.html' %}
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvxGHYNiUzRXCYRoYxuacudDWe7g8ghFw&sensor=false&callback=initMap"></script> -->
 {% endblock %}
+

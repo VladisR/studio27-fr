@@ -1,0 +1,190 @@
+.services
+    position relative
+    overflow hidden
+    padding-bottom 168px
+    margin-bottom -95px
+    &:after
+        content ''
+        position absolute
+        right -165px
+        bottom 0
+        pointer-events none
+        width 397px
+        height 354px
+        background url(../img/car-bg.png) center center no-repeat
+        background-size 100% 100%
+    &__items
+        display flex
+        flex-wrap wrap
+        margin-left -10px
+    &__title
+        max-width 250px
+        margin-bottom 13px
+    &__text {}
+
+    &__col
+        width 50%
+        padding-left 11px
+        margin-bottom 12px
+        min-height 112px
+        &:first-child
+            width 100%
+            margin-bottom 18px
+            min-height 0
+    &__item
+        position relative
+        height 100%
+        display flex
+        align-items center
+        justify-content center
+        padding 32px 15px
+        &-image
+            position absolute
+            left 0
+            top 0
+            right 0
+            bottom 0
+            z-index -1
+            img
+                width 100%
+                height 100%
+                object-fit cover
+        &-title
+            font-size 17px
+            font-weight 500
+            text-align center
+            color #fff
+            line-height 0.9
+        &-link
+            position absolute
+            left 12px
+            bottom 7px
+            .site-button
+                width 22px
+                height 18px
+                background #fff
+                .svg-icon
+                    fill #09BB90
+    &__callback
+        position relative
+        z-index 1
+        height 100%
+        padding 14px 14px 16px 13px
+        background: rgba(#128BCF, 0.05);
+        color #000
+        backdrop-filter: blur(30px);
+        display flex
+        flex-direction column
+        &-title
+            font-size 15px
+            font-weight 600
+            margin-bottom auto
+        &-text
+            font-size 13px
+            margin-top 15px
+            &--large
+                display none
+            a
+                color #000
+                font-weight 400
+                font-size 14px
+                display inline-block
+                margin-top 3px
+        .site-button
+            display none
+    @media (min-width: $mq.md)
+        &__col
+            min-height 260px
+        &__item
+            padding 90px 34px
+            &-title
+                font-size 27px
+            &-link
+                left 34px
+                bottom 35px
+                .site-button
+                    border-radius: 13px;
+                    box-shadow: 0px 2.8125px 11.25px rgba(0, 0, 0, 0.07);
+                    width 45px
+                    height 36px
+                    .svg-icon
+                        width 18px
+                        height 10px
+        &__callback
+            padding 38px 34px 35px
+            &-title
+                font-size 30px
+                font-weight 400
+                line-height 1
+                max-width 268px
+            &-text
+                display none
+                font-weight 400
+                font-size 19px
+                font-weight 300
+                max-width 221px
+                color #7D7D7D
+                a
+                    color #7D7D7D
+                    font-size 19px
+                    font-weight 300
+                    text-decoration none
+                &--large
+                    display block
+            .site-button
+                display flex
+                margin-top 20px
+                .svg-icon
+                    width 36px
+                    height 21px
+                    margin-left 20px
+                    margin-top 1px
+    @media (min-width: $mq.lg)
+        margin-top 70px
+        padding-bottom 403px
+        margin-bottom -350px
+        &:after
+            width 1125px
+            height 1004px
+            right -537px
+            bottom 0
+        &__title
+            margin-bottom 25px
+        &__items
+            margin-left -30px
+        &__col
+            position relative
+            z-index 1
+            min-height 326px
+            padding-left 30px
+            margin-bottom 30px
+            &:first-child
+                margin-bottom 40px
+        &__item
+
+            &-title
+                font-size 37px
+
+        &__callback
+            .site-button
+                margin-top 35px
+                font-size 21px
+                .svg-icon
+                    margin-left 34px
+
+    @media (min-width: $mq.xl)
+        margin-top 0
+        &__title
+            max-width none
+            margin-bottom 45px
+        &__text
+            max-width 278px
+        &__col
+            width 33.33%
+            &:first-child
+                width 33.33%
+                padding-top 35px
+
+        &__item
+            &-title
+                max-width 310px

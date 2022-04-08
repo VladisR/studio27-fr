@@ -1,0 +1,103 @@
+.list-block2
+    background-color #354253
+    background-repeat no-repeat
+    background-position right 0
+    background-size cover
+    &__in
+        padding-top 40px
+        padding-bottom 15px
+        color #fff
+    &__title
+        color #fff
+        margin-bottom 28px
+    &__item
+        margin-bottom 15px
+        &-in
+            padding 21px 33px 24px 23px
+            background rgba(#415066, 0.4)
+            backdrop-filter blur(35px)
+            border-radius 8px
+            min-height 136px
+            display flex
+            letter-spacing: -0.02em;
+        &-container
+            margin-right auto
+            display flex
+            flex-direction column
+            height 100%
+        &-title
+            font-size 17px
+            font-weight 500
+            margin-bottom 14px
+        &-text
+            color: rgba(#E9E9E9, 0.6);
+            font-size 14px
+            font-weight 200
+            margin-bottom 12px
+        &-icon
+            flex none
+            width 89px
+            height 89px
+            display flex
+            align-items center
+            justify-content center
+            border: 1px solid rgba(#8B939F, 0.6);
+            border-radius 500px
+            margin-left 15px
+        &-link
+            margin-top auto
+        .link
+            margin-left 0
+            font-size 11px
+            color #7EE141
+            .svg-icon
+                margin-left 10px
+                width 17px
+                height 15px
+    @media (min-width: $mq.lg)
+        &__in
+            padding-top 96px
+            padding-bottom 70px
+        &__title
+            margin-bottom 54px
+        &__items
+            display flex
+            flex-wrap wrap
+            margin-left -15px
+
+        &__item
+            width 33.33%
+            padding-left 15px
+            &-in
+                height 100%
+            &-title
+                font-size 25px
+            &-text
+                font-size 16px
+                color #E9E9E9
+    @media (min-width: $mq.xl)
+        &__item
+            &-in
+                padding 51px 49px 32px 46px
+                min-height 264px
+            &-container
+                max-width 203px
+            &-title
+                margin-bottom 34px
+
+    @media (min-width: $mq.xxl)
+        &__in
+            padding-bottom 100px
+        &__items
+            margin-left -37px
+        &__item
+            padding-left 37px
+            margin-bottom 37px
+            &-icon
+                width 107px
+                height 107px
+                margin-left 50px
+        .link
+            font-size 16px
+            .svg-icon
+                margin-left 16px

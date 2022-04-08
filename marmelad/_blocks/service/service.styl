@@ -1,0 +1,114 @@
+.service
+    display flex
+    flex-direction column
+    text-decoration none
+    height auto
+    &:hover
+        .site-button
+            border-color transparent
+            &:after
+                opacity 1
+
+
+    &__image
+        margin-bottom 13px
+        img
+            display block
+            width 100%
+    &__container
+        padding-left 15px
+        padding-right 45px
+        flex 1
+        display flex
+        flex-direction column
+    &__head,
+    &__title
+        display block
+    &__head
+        font-size 12px
+        color: #5CBE56;
+        margin-bottom 12px
+    &__title
+        font-size 18px
+        font-weight 300
+        color #fff
+        line-height 0.9
+        margin-bottom 17px
+    .site-button
+        margin-top auto
+        width 41px
+        height 30px
+        background none
+        margin-top auto
+        border: 1px solid #C1C1C1;
+        transition 0.3s ease border-color
+        &.arrow
+            border-radius: 11px;
+    &__text
+        font-size 14px
+        margin-bottom 18px
+        color #fff
+    @media (min-width: $mq.lg)
+        &__image
+            margin-bottom 19px
+        &__head
+            margin-bottom 20px
+            font-size 16px
+        &__title
+            margin-bottom 23px
+            font-size 24px
+            max-width 218px
+        &__text
+            font-size 17px
+            margin-bottom 23px
+        .site-button
+            width 42px
+            height 29px
+            .svg-icon
+                width 15px
+                height 9px
+
+.service
+    &.type-2
+        & ^[0]
+
+            &__container
+                padding-left 0
+                padding-right 20px
+            &__title
+                color #000
+                font-weight 400
+
+            &__text
+                color #545454
+
+        .site-button
+            width 47px
+            height 32px
+            border-color #55D35C
+            box-shadow none
+            .svg-icon
+                fill #000
+                width 16px
+                height 10px
+
+        &:hover
+            .site-button
+                border-color transparent
+                .svg-icon
+                    fill #fff
+        @media (min-width: $mq.lg)
+            & ^[0]
+                &__title
+                    max-width none
+                    font-size 21px
+                    padding-right 42px
+
+            .site-button
+                &.arrow
+                    width 60px
+                    height 40px
+                    border-radius 13px
+                    .svg-icon
+                        width 21px
+                        height 12px

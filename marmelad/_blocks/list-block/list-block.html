@@ -1,0 +1,21 @@
+<div block="list-block">
+    <div elem="in" class="container">
+        <div elem="head" class="has-arrows">
+            <h2 elem="title" class="h2">Популярные услуги</h2>
+        </div>
+        <div elem="container" class="swiper-parent">
+            <div elem="items" class="js-list-carousel swiper">
+                <div elem="items-in" class="swiper-wrapper">
+                    {% include 'service.html' %}
+                    {% include 'service.html' %}
+                </div>
+                <div class="swiper-button-wrapper">
+                    <div class="swiper-button swiper-button-prev">{{ _icon('arr-l3', { tag: 'span' }) }}</div>
+                    <div class="swiper-button swiper-button-next">{{ _icon('arr-r3', { tag: 'span' }) }}</div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+                <div class="swiper-pagination white"></div>
+            </div>
+        </div>
+    </div>
+</div><!-- list-block -->
