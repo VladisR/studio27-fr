@@ -50,9 +50,10 @@
         margin-left -20px
         margin-right -20px
         padding-left 20px
-        padding-right 94px
+        padding-right 33px
         overflow hidden
-
+        @media (min-width: 375px)
+            padding-right 94px
 .swiper-scrollbar
     height 6px
     margin-top 30px
@@ -128,10 +129,15 @@
 
     .swiper-scrollbar
         display none
+        margin-top 74px
 
     .list-block.type-2
         .swiper-button
             margin-top -2.5%
+    .desctop-visible
+        display block
+    .desctop-hide
+        display none
 @media (min-width: 1921px)
     .swiper-parent
         .swiper

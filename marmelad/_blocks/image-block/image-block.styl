@@ -1,0 +1,105 @@
+.image-block
+    margin-bottom 37px
+    &__col
+        &--image
+            margin-bottom 24px
+            img
+                display block
+                width 100%
+    &__text
+        font-size 14px
+        line-height 1
+    &__title
+        font-size 25px
+        margin-bottom 23px
+        color #000
+        font-weight 400
+        line-height 1
+
+    &.type-1
+        & ^[0]
+            &__col
+                &--image
+                    margin-left -20px
+    @media (min-width: $mq.md)
+        display flex
+        align-items center
+        &__col
+            &--image
+                margin-bottom 0
+                flex 1
+            &--text
+                width 50%
+        &.type-1
+            & ^[0]
+                &__col
+                    &--text
+                        padding-left 40px
+        &.type-2
+            flex-direction row-reverse
+            & ^[0]
+                &__col
+                    &--text
+                        padding-right 40px
+                    &--image
+                        margin-right -20px
+
+
+
+    @media (min-width: $mq.lg)
+        &.type-1
+            & ^[0]
+                &__col
+                    &--image
+                        margin-left -30px
+        &.type-2
+            & ^[0]
+                &__col
+                    &--image
+                        margin-right -30px
+                &__text
+                    padding-left 20px
+        &__text
+            font-size 18px
+        &__title
+            font-size 30px
+
+    @media (min-width: $mq.xxl)
+        margin-bottom 72px
+        &__text
+            font-size 25px
+        &__title
+            font-size 50px
+            margin-bottom 60px
+        &__col
+            &--image
+                width 54.3%
+        &.type-1
+            & ^[0]
+                &__col
+                    &--text
+                        padding-left 103px
+                    &--image
+                        margin-left -67px
+        &.type-2
+            & ^[0]
+                &__col
+                    &--image
+                        margin-right -67px
+                    &--text
+                        padding-right 30px
+                &__text
+                    padding-left 70px
+                    padding-right 30px
+
+    @media (min-width: 1921px)
+        &.type-1
+            & ^[0]
+                &__col
+                    &--image
+                        margin-left 0
+        &.type-2
+            & ^[0]
+                &__col
+                    &--image
+                        margin-right 0

@@ -73,8 +73,13 @@
             &-title
                 font-size 25px
             &-text
-                font-size 16px
+                font-size 17px
                 color #E9E9E9
+                font-weight 300
+            &-icon
+                img
+                    width 66px
+                    max-height 58px
     @media (min-width: $mq.xl)
         &__item
             &-in
@@ -88,6 +93,7 @@
     @media (min-width: $mq.xxl)
         &__in
             padding-bottom 100px
+
         &__items
             margin-left -37px
         &__item
@@ -101,3 +107,52 @@
             font-size 16px
             .svg-icon
                 margin-left 16px
+
+.list-block2
+    &.type-2
+        & ^[0]
+            &__in
+                padding-bottom 52px
+            &__item
+                &-in
+                    background rgba(#606972, 0.4)
+                    display block
+                    border-radius 0
+                &-container
+                    display flex
+                    flex-direction row
+                    width 100%
+                    align-items center
+                    height auto
+                    margin-bottom 16px
+                &-icon
+                    margin-left auto
+                &-title
+                    margin-bottom 0
+                    margin-right 20px
+                &-text
+                    margin-top 0
+                    margin-bottom 0
+            @media (min-width: $mq.xl)
+                &__in
+                    padding-bottom 100px
+                &__item
+                    &-container
+                        max-width 100%
+                        align-items flex-start
+                    &-title
+                        margin-bottom 0
+                        max-width 250px
+                    &-text
+                        max-width 200px
+
+        .swiper-scrollbar
+            margin-top 5px
+
+        @media (min-width: $mq.lg)
+            .swiper-parent
+                .swiper
+                    padding 0
+                    margin 0
+                .swiper-wrapper
+                    width auto

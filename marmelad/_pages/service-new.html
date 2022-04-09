@@ -1,0 +1,149 @@
+= yaml =
+pageTitle: Пошив салона
+bodyClasses:
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+= yaml =
+
+{% extends 'app.html' %}
+
+{% set hideMenu = true %}
+
+{% block main %}
+	{% include 'intro-in.html' %}
+	<div block="c-bg">
+		<div class="container">
+			<div block="list-block" class="type-3">
+				<div elem="title" class="h2">Услуги по пошиву <br> салона</div>
+	            <div elem="items" class="cols-md-2 cols-xxl-3">
+	            	{% include 'service2.html' %}
+	            </div>
+			</div><!-- list-block -->
+			{% include 'brands.html' %}
+			<h2 class="bl-title">Перетяжка салона автомобиля это основная услуга <br> предоставляемая в нашем автоателье. </h2>
+			{% include 'image-block.html' %}
+		</div>
+
+		<div block="list-block" class="type-2">
+		    <div elem="in" class="container">
+		        <div elem="head">
+		        	<div elem="head-row">
+			            <h2 elem="title" class="h2">
+			            	Проекты
+			            </h2>
+		            </div>
+		            <span elem="overtitle">Выполненые работы по пошиву салона</span>
+		        </div>
+		        <div elem="container" class="swiper-parent">
+		            <div elem="items" class="js-list-carousel2 swiper">
+		                <div elem="items-in" class="swiper-wrapper">
+		                	{% for i in range(0, 2) %}
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv5-img1.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Полная перетяжка салона BMW Z650</span>
+							        <div elem="text">Стоимость услуг -  7,800 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv5-img2.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+							        <div elem="text">Стоимость услуг -  21,000 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv5-img3.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Полная перетяжка салона BMW Z650</span>
+							        <div elem="text">Стоимость услуг -  7,800 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv5-img4.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+							        <div elem="text">Стоимость услуг -  21,000 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							{% endfor %}
+		                </div>
+	                    <div class="swiper-button swiper-button-prev">{{ _icon('arr-l3', { tag: 'span' }) }}</div>
+	                    <div class="swiper-button swiper-button-next">{{ _icon('arr-r3', { tag: 'span' }) }}</div>
+		                <div class="swiper-scrollbar desctop-visible color2"></div>
+		                <div class="swiper-pagination desctop-hide"></div>
+		            </div>
+		        </div>
+		    </div>
+		</div><!-- list-block -->
+	</div>
+
+	<div block="list-block2" class="type-2" style="background-image: url(files/list-block2-bg2.jpg);">
+	    <div elem="in" class="container">
+	        <div elem="title" class="h2">Пошив салона <br> в STUDIO15</div>
+	        <div elem="container" class="swiper-parent">
+	        	<div elem="container-in" class="js-list-carousel3 swiper">
+			        <div elem="items" class="swiper-wrapper">
+			            <div elem="item" class="swiper-slide">
+			                <div elem="item-in">
+			                    <div elem="item-container">
+			                        <div elem="item-title">
+			                            Используем лучшие материалы
+			                        </div>
+			                    	<div elem="item-icon"><img src="files/list-bl-icon4.svg" alt=""></div>
+			                    </div>
+		                        <div elem="item-text">
+		                            Все детали и комплектующие в наличии
+		                        </div>
+			                </div>
+			            </div>
+			            <div elem="item" class="swiper-slide">
+			                <div elem="item-in">
+			                    <div elem="item-container">
+			                        <div elem="item-title">
+			                            Работчие с опытом от 10 лет
+			                        </div>
+			                    	<div elem="item-icon"><img src="files/list-bl-icon2.svg" alt=""></div>
+			                    </div>
+		                        <div elem="item-text">
+		                            Все детали и комплектующие в наличии
+		                        </div>
+			                </div>
+			            </div>
+			            <div elem="item" class="swiper-slide">
+			                <div elem="item-in">
+			                    <div elem="item-container">
+			                        <div elem="item-title">
+			                            Гарантии на пошив салона
+			                        </div>
+			                    	<div elem="item-icon"><img src="files/list-bl-icon3.svg" alt=""></div>
+			                    </div>
+		                        <div elem="item-text">
+		                            Все детали и комплектующие в наличии
+		                        </div>
+			                </div>
+			            </div>
+		            </div>
+		            <div class="swiper-scrollbar color2"></div>
+	            </div>
+	        </div>
+	    </div>
+	</div><!-- list-block2 -->
+
+
+
+	<div class="container">
+		{% include 'messengers.html' %}
+		{% include 'address.html' %}
+	</div>
+	{% include 'map-fullscreen.html' %}
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvxGHYNiUzRXCYRoYxuacudDWe7g8ghFw&sensor=false&callback=initMap"></script> -->
+{% endblock %}
+
