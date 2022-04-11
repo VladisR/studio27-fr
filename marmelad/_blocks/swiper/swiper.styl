@@ -120,12 +120,23 @@
         display none
     .swiper-pagination
         display block
+    .swiper-parent
+        &.type-2
+            .swiper-scrollbar
+                display block
+                margin-top -1px
 @media (min-width: $mq.xxl)
     .swiper-parent
         .swiper
             margin-left -67px
             padding-left 67px
             margin-right -67px
+    .swiper-parent
+        &.type-2
+            .swiper
+                padding-right 134px
+
+
 
     .swiper-scrollbar
         display none
@@ -163,3 +174,8 @@
             left 0
         .swiper-button-next
             right 0
+
+    .swiper-parent
+        &.type-2
+            .swiper
+                padding-right 0

@@ -1,0 +1,49 @@
+.text2
+    color #000
+    margin-bottom 60px
+    &__title
+        font-weight 400
+        font-size 21px
+        margin-bottom 33px
+        line-height 1
+        letter-spacing: -0.02em;
+    ul
+        margin 0
+        padding 0
+        list-style none
+        li
+            padding-left 38px
+            margin-bottom 24px
+            position relative
+            &:before
+                content ''
+                position absolute
+                left 0
+                top 9px
+                height 2px
+                width 18px
+                background: linear-gradient(99.65deg, #B8D217 -24.21%, #09BA8F 91.89%);
+                border-radius: 2.78813px;
+    &__body
+        font-size 17px
+
+    @media (min-width: $mq.md)
+        ul
+            margin-left 63px
+
+    @media (min-width: $mq.lg)
+        margin-top 63px
+        &__title
+            font-size 32px
+        &__body
+            font-size 25px
+        ul
+            li
+                padding-left 70px
+                &:before
+                    width 41px
+                    top 13px
+                    height 4px
+
+    @media (min-width: $mq.xl)
+        margin-top 90px

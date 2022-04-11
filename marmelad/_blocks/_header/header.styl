@@ -17,6 +17,7 @@
         position relative
         display flex
         align-items center
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.04);
         &-in
             min-height 53px
             display flex
@@ -574,3 +575,22 @@
     .header
         &__menu
             display block
+
+.dark-menu
+    .header
+        padding-top 84px
+        &__menu
+            // background #fff
+            &:after
+                content ''
+                position absolute
+                left 0
+                top 0
+                right 0
+                bottom 0
+                z-index -1
+                background #fff
+            > ul > li > a
+                color #000
+        @media (min-width: $mq.lg)
+            padding-top 185px

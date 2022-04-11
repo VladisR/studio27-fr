@@ -1,0 +1,170 @@
+= yaml =
+pageTitle: Подбор услуг
+bodyClasses: dark-menu
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+= yaml =
+
+{% extends 'app.html' %}
+
+{% set hideMenu = true %}
+
+{% block main %}
+
+	<!-- <div block="c-bg"> -->
+		<div class="container">
+			<h1>Подбор услуг для BMW G11 768i</h1>
+			<div block="c-image">
+				<img src="files/selection-img.jpg" alt="">
+			</div><!--c-image-->
+			<form block="filter">
+			    <div elem="title" class="h2">Подбор услуг по авто</div>
+			    <div elem="items">
+			        <div elem="item">
+			            <select class="js-select-brand" data-placeholder="Выберите марку авто">
+			                <option></option>
+			                <option img-name="f-img2" selected>BMW</option>
+			                <option img-name="f-img1">BMW</option>
+			                <option img-name="f-img3">BMW</option>
+			                <option img-name="f-img4">BMW</option>
+			                <option img-name="f-img5">BMW</option>
+			                <option img-name="f-img6">BMW</option>
+			                <option img-name="f-img7">BMW</option>
+			                <option img-name="f-img8">BMW</option>
+			                <option img-name="f-img9">BMW</option>
+			            </select>
+			        </div>
+			        <div elem="item">
+			            <select data-placeholder="Модель" class="js-select js-select-model">
+			                <option></option>
+			                <option selected>7-series</option>
+			                <option>7-series 1</option>
+			                <option>7-series 2</option>
+			                <option>7-series 3</option>
+			            </select>
+			        </div>
+			        <div elem="item">
+			            <select data-placeholder="Модификация" class="js-select js-select-modification">
+			                <option></option>
+			                <option>G11 768i</option>
+			                <option selected>G11 768i 1</option>
+			                <option>G11 768i 2</option>
+			                <option>G11 768i 3</option>
+			            </select>
+			        </div>
+			    </div>
+			</form><!-- filter -->
+			{% include 'text-block.html' %}
+
+			<div class="c-separator"></div>
+
+			<div block="hz-title">Для владельцев BMW G11 768i мы оказываем следующие услуги:</div><!--hz-title-->
+
+			<div block="list-block" class="type-4">
+				<div elem="title" class="h2">Детейлинг</div>
+				<div elem="container" class="swiper-parent">
+					<div elem="container-in" class="swiper js-list-carousel4">
+			            <div elem="items" class="swiper-wrapper">
+							<div block="service2" class="type-2 swiper-slide">
+							    <a elem="in" href="#">
+							        <span elem="container">
+							            <img elem="image" src="files/serv4-img1.jpg" alt="">
+							            <span elem="title">Пошив салона</span>
+							            <span class="site-button arrow">{{ _icon('arr-r3', { tag: 'span' }) }}</span>
+							        </span>
+							        <span elem="text">Ремонт сидений от 5600 Р</span>
+							    </a>
+							</div>
+							<div block="service2" class="type-2 swiper-slide">
+							    <a elem="in" href="#">
+							        <span elem="container">
+							            <img elem="image" src="files/serv4-img4.jpg" alt="">
+							            <span elem="title">Цветные ремни безопасности</span>
+							            <span class="site-button arrow">{{ _icon('arr-r3', { tag: 'span' }) }}</span>
+							        </span>
+							        <span elem="text">Ремонт сидений от 5600 Р</span>
+							    </a>
+							</div>
+			            </div>
+			            <div class="swiper-scrollbar desctop-visible color2"></div>
+			        </div>
+			   </div>
+			</div>
+			<!-- list-block -->
+
+			<div block="list-block" class="type-4">
+				<div elem="title" class="h2">Пошив (Автоателье)</div>
+				<div elem="container" class="swiper-parent">
+					<div elem="container-in" class="swiper js-list-carousel4">
+			            <div elem="items" class="swiper-wrapper">
+							<div block="service2" class="type-2 swiper-slide">
+							    <a elem="in" href="#">
+							        <span elem="container">
+							            <img elem="image" src="files/serv4-img6.jpg" alt="">
+							            <span elem="title">Пошив ковров</span>
+							            <span class="site-button arrow">{{ _icon('arr-r3', { tag: 'span' }) }}</span>
+							        </span>
+							        <span elem="text">Ремонт сидений от 5600 Р</span>
+							    </a>
+							</div>
+			            </div>
+			            <div class="swiper-scrollbar desctop-visible color2"></div>
+			        </div>
+			   </div>
+			</div>
+			<!-- list-block -->
+
+			<div block="list-block" class="type-4">
+				<div elem="title" class="h2">Автомобильные пленки</div>
+				<div elem="container" class="swiper-parent type-2">
+					<div elem="container-in" class="swiper js-list-carousel4">
+			            <div elem="items" class="swiper-wrapper">
+							<div block="service2" class="type-2 swiper-slide">
+							    <a elem="in" href="#">
+							        <span elem="container">
+							            <img elem="image" src="files/serv6-img1.jpg" alt="">
+							            <span elem="title">Тонирование стекол</span>
+							            <span class="site-button arrow">{{ _icon('arr-r3', { tag: 'span' }) }}</span>
+							        </span>
+							        <span elem="text">Ремонт сидений от 5600 Р</span>
+							    </a>
+							</div>
+							<div block="service2" class="type-2 swiper-slide">
+							    <a elem="in" href="#">
+							        <span elem="container">
+							            <img elem="image" src="files/serv6-img2.jpg" alt="">
+							            <span elem="title">Бронирование фора</span>
+							            <span class="site-button arrow">{{ _icon('arr-r3', { tag: 'span' }) }}</span>
+							        </span>
+							        <span elem="text">Ремонт сидений от 5600 Р</span>
+							    </a>
+							</div>
+							<div block="service2" class="type-2 swiper-slide">
+							    <a elem="in" href="#">
+							        <span elem="container">
+							            <img elem="image" src="files/serv6-img3.jpg" alt="">
+							            <span elem="title">Пошив салона</span>
+							            <span class="site-button arrow">{{ _icon('arr-r3', { tag: 'span' }) }}</span>
+							        </span>
+							        <span elem="text">Ремонт сидений от 5600 Р</span>
+							    </a>
+							</div>
+			            </div>
+			            <div class="swiper-scrollbar desctop-visible color2"></div>
+			        </div>
+			   </div>
+			</div>
+			<!-- list-block -->
+
+		</div>
+	<!-- </div> -->
+
+	<div class="container">
+		{% include 'address.html' %}
+	</div>
+
+{% endblock %}
+

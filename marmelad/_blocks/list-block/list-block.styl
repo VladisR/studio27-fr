@@ -85,6 +85,32 @@
         @media (min-width: $mq.xxl)
             padding 58px 60px 26px
 
+.list-block
+    &.type-4
+        background none
+        padding 0
+        margin-bottom 43px
+        & ^[0]
+            &__title
+                color #000
+                font-family $fonts.base
+                font-size 26px
+                margin-bottom 17px
+                font-weight 400
+
+            @media (min-width: $mq.md)
+                &__title
+                    font-size 37px
+                    margin-bottom 30px
+            @media (min-width: $mq.lg)
+
+                &__title
+                    font-size 59px
+                    margin-bottom 44px
+                    max-width none
+
+        @media (min-width: $mq.lg)
+            margin-bottom 35px
 .cols-md-2
     @media (min-width: $mq.md)
         display flex
