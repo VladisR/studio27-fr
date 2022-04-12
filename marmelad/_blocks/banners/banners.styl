@@ -55,7 +55,7 @@
     &__title
         font-size 18px
         letter-spacing: -0.02em;
-        font-weight 600
+        font-weight 400
     &__link
         margin-top 32px
         display inline-flex
@@ -101,3 +101,69 @@
                     width 16px
                     height 9px
 
+.banners
+    &.type-2
+        overflow-x visible
+        display block
+        margin-bottom 25px
+        padding-left 0
+        margin-left 0
+        margin-right 0
+        padding-right 0
+        position relative
+        &:after
+            content ''
+            position absolute
+            bottom 0
+            z-index 1
+            height 6px
+            width 20px
+            left -20px
+            background #fff
+        &:before
+            content ''
+            position absolute
+            bottom 0
+            z-index 1
+            height 6px
+            width 20px
+            right -20px
+            background #fff
+    &__items
+        overflow-x auto
+        padding-bottom 13px
+        font-size 0
+        margin-left -20px
+        margin-right -20px
+        padding-right 5px
+        padding-left 20px
+        &::-webkit-scrollbar
+            height 6px
+        &::-webkit-scrollbar-thumb { height: 50px; background-color: #D5D5D5;}
+
+        .banner
+            padding-left 0
+            padding-right 15px
+
+    @media (min-width: $mq.md)
+        .banner
+            margin-bottom 20px
+        &__items
+            display flex
+            flex-wrap wrap
+            overflow visible
+
+    @media (min-width: $mq.lg)
+        &.type-2
+            margin-top 0
+            padding-right 0
+            margin-bottom 49px
+        &__items
+            padding-right 0
+            margin-right 0
+            margin-left -30px
+            padding-left 0
+            padding-bottom 0
+
+        .banner
+            padding-right 0

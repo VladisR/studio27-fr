@@ -43,6 +43,10 @@
             &__items
                 margin-bottom -10px
 
+            &.no-borders
+                .brands__item
+                    border 0
+
     @media (min-width: $mq.lg)
         padding 44px 30px 34px 30px
         &__title
@@ -59,3 +63,42 @@
             & ^[0]
                 &__title
                     font-size 32px
+.filter
+    &.type-3
+        padding-top 15px
+        padding-bottom 8px
+        margin-bottom 40px
+        & ^[0]
+            &__title
+                font-size 13px
+                margin-bottom 14px
+            &__item
+                margin-bottom 11px
+        @media (min-width: $mq.lg)
+            display flex
+            align-items center
+            padding-top 29px
+            padding-bottom 29px
+            padding-left 50px
+            padding-right 62px
+            margin-bottom 37px
+            & ^[0]
+                &__title
+                    font-size 18px
+                    margin-bottom 0
+                    max-width 155px
+                &__items
+                    flex 1
+                    margin-left -37px
+
+                &__item
+                    width 50%
+                    padding-left 37px
+                    margin-bottom 0
+
+        @media (min-width: $mq.xl)
+            & ^[0]
+                &__title
+                    min-width 200px
+                    margin-right 33px
+                    padding-top 3px

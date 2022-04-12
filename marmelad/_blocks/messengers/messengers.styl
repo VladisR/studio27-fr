@@ -3,6 +3,31 @@
     padding 23px 18px
     margin-bottom 20px
     margin-top -23px
+    position relative
+    z-index 1
+    &:after
+        content ''
+        position absolute
+        left 0
+        top 0
+        right 0
+        bottom 0
+        background #fff
+        z-index -1
+    &:before
+        content ''
+        left -14%
+        bottom -40%
+        position absolute
+        width 100%
+        max-width 50%
+        height 400px
+        background: #1892C7;
+        opacity: 0.08;
+        filter: blur(150.698px);
+        border-radius 100%
+        z-index -1
+
     &__title
         font-size 21px
         line-height 1
@@ -95,3 +120,19 @@
         &__title
             font-size 55px
             margin-bottom 18px
+
+
+.messengers
+    &.type-2
+        margin-top 0
+        & ^[0]
+            @media (min-width: $mq.md)
+                &__title
+                    font-size 35px
+
+.messengers
+    &.type-3
+        & ^[0]
+            @media (min-width: $mq.xl)
+                &__title
+                    font-size 50px

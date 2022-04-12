@@ -1,0 +1,64 @@
+.pagination
+    margin-bottom 58px
+    display flex
+    align-items center
+    flex-wrap wrap
+    justify-content center
+    .site-button
+        width 100%
+        margin-bottom 16px
+        font-size 17px
+        .svg-icon
+            width 22px
+            height 15px
+            margin-left 25px
+            margin-top 1px
+    &__item
+        width 47px
+        height 47px
+        margin 0 3px 6px
+        background: #FFFFFF;
+        box-shadow: 5.48333px 3.13333px 10.9667px rgba(136, 152, 160, 0.17);
+        text-decoration none
+        display flex
+        justify-content center
+        align-items center
+        font-size: 16px;
+        font-weight 500
+        text-decoration none
+        color #000
+        transition 0.3s ease color, 0.3s ease background
+        a&:hover
+            background $colorAccent
+            color #fff
+        &--curent
+            background: #F8F8F8;
+            box-shadow none
+        &--dots
+            background none
+            box-shadow none
+            width 37px
+            color: #B7B7B7;
+            letter-spacing: -0.03em;
+    @media (min-width: $mq.sm)
+        justify-content flex-start
+        margin-bottom 64px
+        margin-left -3px
+        .site-button
+            width auto
+            margin-bottom 0
+            min-height 47px
+            order 2
+            margin-left 20px
+        &__item
+            margin-bottom 0
+
+    @media (min-width: $mq.md)
+        .site-button
+            font-size 20px
+            padding-top 10px
+            padding-bottom 10px
+            min-width 290px
+
+    @media (min-width: $mq.xl)
+        margin-bottom 79px

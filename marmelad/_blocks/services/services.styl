@@ -188,3 +188,42 @@
         &__item
             &-title
                 max-width 310px
+.services
+    &.type-2
+        margin 0 0 78px 0
+        padding 0
+        &:after
+            display none
+        & ^[0]
+            &__item
+                padding 0
+                margin-bottom 47px
+                &:last-child
+                    margin-bottom 0
+        @media (min-width: $mq.md)
+            display flex
+            flex-wrap wrap
+            margin-left -20px
+            margin-bottom 18px
+            & ^[0]
+                &__item
+                    width 50%
+                    padding-left 20px
+
+        @media (min-width: $mq.lg)
+            margin-left -30px
+            & ^[0]
+                &__item
+                    padding-left 30px
+
+        @media (min-width: $mq.xl)
+            margin-bottom 35px
+        @media (min-width: $mq.xxl)
+            margin-left -66px
+            margin-bottom 14px
+            & ^[0]
+                &__item
+                    padding-left 66px
+                    margin-bottom 64px
+                    &:last-child
+                        margin-bottom 64px

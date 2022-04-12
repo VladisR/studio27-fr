@@ -41,3 +41,29 @@
         @media (min-width: $mq.md)
             margin-bottom 38px
 
+.intro-in
+    &.type-3
+        padding-top 85px
+        margin-bottom -179px
+        min-height 368px
+        padding-bottom 196px
+        h1, .h1
+            text-align left
+            font-size 56px
+        & ^[0]
+            &__text
+                min-height 0
+                // align-items flex-start
+        @media (min-width: $mq.lg)
+            min-height 575px
+            margin-bottom -340px
+            h1, .h1
+                font-size 66px
+            & ^[0]
+                &__text
+                    align-items flex-start
+
+        @media (min-width: $mq.xxl)
+            margin-bottom -305px
+            h1, .h1
+                font-size 100px

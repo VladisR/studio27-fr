@@ -187,6 +187,14 @@
         .social-links
             &__item
                 margin-right 17px
+        &__anhor
+            display none
+            order 3
+            .svg-icon
+                display block
+                width 17px
+                height 19px
+                fill #71DD49
     @media (min-width: $mq.lg)
         padding-top 73px
         &__content
@@ -413,9 +421,18 @@
                                     font-size 16.5px
                                 .mn-item-note
                                     font-size 15px
+        &__anhor
+            display block
+            margin-left 20px
+            margin-right -25px
     @media (min-width: $mq.xxxl)
         &__address
             width 201px
+        &__anhor
+            margin-left 21px
+            .svg-icon
+                width 22px
+                height 26px
     @media (min-width: $mq.sd)
         &__menu
             > ul
@@ -430,7 +447,11 @@
                             > a
                                 .mn-item-name
                                     font-size 20px
-
+        &__anhor
+            margin-right 0
+    @media (min-width: 1700px)
+        &__anhor
+            margin-left 59px
 .header
     &__fixed
         position fixed
@@ -478,6 +499,7 @@
                             padding 20px 0 20px
                             min-height 62px
                             flex none
+                            font-size 14px
                             .svg-icon
                                 top 52%
                         > ul
@@ -533,7 +555,7 @@
 
             & ^[0]
                 &__logo
-                    margin-right 46px
+                    margin-right 30px
                 &__menu
                     > ul
                         > li
@@ -556,7 +578,10 @@
                                 font-size 17px
                                 .svg-icon
                                     top 54%
-
+        @media (min-width: 1700px)
+            & ^[0]
+                &__logo
+                    margin-right 46px
         @media (min-width: 1921px)
             & ^[0]
                 &__menu
@@ -571,7 +596,7 @@
                                 right auto
 
 
-.home
+.home, .visible-menu
     .header
         &__menu
             display block

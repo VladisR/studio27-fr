@@ -1,0 +1,210 @@
+= yaml =
+pageTitle: Проекты
+bodyClasses: visible-menu
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+= yaml =
+
+{% extends 'app.html' %}
+
+{% set hideMenu = false %}
+
+{% block main %}
+	<div block="intro-in" class="type-3" style="background-image: url(files/in-t-bg3.jpg);">
+	    <div elem="container" class="container">
+<!-- 			<div block="paths">
+			    <a href="#">Услуги</a>
+			    <span class="separator">/</span>
+			    <a href="#">Пошив (автоателье)</a>
+			    <span class="separator">/</span>
+			    <span>Пошив (автоателье)</span>
+			</div> -->
+			<!-- paths -->
+	        <div elem="text">
+	            <h1 class="h1">Проекты</h1>
+	            <div class="undertitle">Выполненые работы нашей студии</div>
+	        </div>
+	    </div>
+	</div><!-- intro-in -->
+
+	<div class="container">
+		<form block="filter" class="type-3">
+		    <div elem="title" class="h2">Фильтр проектов</div>
+		    <div elem="items">
+		        <div elem="item">
+		            <select class="js-select-brand" data-placeholder="Выберите марку авто">
+		                <option></option>
+		                <option img-name="f-img2" selected>BMW</option>
+		                <option img-name="f-img1">BMW</option>
+		                <option img-name="f-img3">BMW</option>
+		                <option img-name="f-img4">BMW</option>
+		                <option img-name="f-img5">BMW</option>
+		                <option img-name="f-img6">BMW</option>
+		                <option img-name="f-img7">BMW</option>
+		                <option img-name="f-img8">BMW</option>
+		                <option img-name="f-img9">BMW</option>
+		            </select>
+		        </div>
+		        <div elem="item">
+		            <select data-placeholder="Любые услуги" class="js-select js-select-model">
+		                <option></option>
+		                <option>Услуга  1</option>
+		                <option>Услуга  2</option>
+		                <option>Услуга  3</option>
+		                <option>Услуга  4</option>
+		                <option>Услуга  5</option>
+		            </select>
+		        </div>
+
+		    </div>
+		</form><!-- filter -->
+		<div block="services" class="type-2">
+			<div elem="item">
+				<a href="#" block="service" class="type-2 type-3">
+				    <span elem="image"><img src="files/serv7-img1.jpg" alt=""></span>
+				    <span elem="container">
+				        <span elem="title">Бронирование лобового стекла BMW G30 (2019) пленкой Clearplex</span>
+				        <div elem="text">Стоимость выполненных работ - <span elem="price">15000 ₽</span></div>
+				        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+				    </span>
+				</a>
+			</div>
+			<div elem="item">
+				<a href="#" block="service" class="type-2 type-3">
+				    <span elem="image"><img src="files/serv7-img2.jpg" alt=""></span>
+				    <span elem="container">
+				        <span elem="title">Оклейка отбойной части кузова Skoda Rapid полиуретаном</span>
+				        <div elem="text">Стоимость выполненных работ - <span elem="price">15000 ₽</span></div>
+				        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+				    </span>
+				</a>
+			</div>
+			<div elem="item">
+				<a href="#" block="service" class="type-2 type-3">
+				    <span elem="image"><img src="files/serv7-img3.jpg" alt=""></span>
+				    <span elem="container">
+				        <span elem="title">Бронирование лобового стекла BMW G30 (2019) пленкой Clearplex</span>
+				        <div elem="text">Стоимость выполненных работ - <span elem="price">15000 ₽</span></div>
+				        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+				    </span>
+				</a>
+			</div>
+			<div elem="item">
+				<a href="#" block="service" class="type-2 type-3">
+				    <span elem="image"><img src="files/serv7-img4.jpg" alt=""></span>
+				    <span elem="container">
+				        <span elem="title">Оклейка отбойной части кузова Skoda Rapid полиуретаном</span>
+				        <div elem="text">Стоимость выполненных работ - <span elem="price">15000 ₽</span></div>
+				        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+				    </span>
+				</a>
+			</div>
+			<div elem="item">
+				<a href="#" block="service" class="type-2 type-3">
+				    <span elem="image"><img src="files/serv7-img5.jpg" alt=""></span>
+				    <span elem="container">
+				        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+				        <div elem="text">Стоимость выполненных работ - <span elem="price">15000 ₽</span></div>
+				        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+				    </span>
+				</a>
+			</div>
+			<div elem="item">
+				<a href="#" block="service" class="type-2 type-3">
+				    <span elem="image"><img src="files/serv7-img6.jpg" alt=""></span>
+				    <span elem="container">
+				        <span elem="title">Бронирование лобового стекла BMW G30 (2019) пленкой Clearplex</span>
+				        <div elem="text">Стоимость выполненных работ - <span elem="price">15000 ₽</span></div>
+				        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+				    </span>
+				</a>
+			</div>
+			<div elem="item">
+				<a href="#" block="service" class="type-2 type-3">
+				    <span elem="image"><img src="files/serv7-img7.jpg" alt=""></span>
+				    <span elem="container">
+				        <span elem="title">Оклейка отбойной части кузова Skoda Rapid полиуретаном</span>
+				        <div elem="text">Стоимость выполненных работ - <span elem="price">15000 ₽</span></div>
+				        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+				    </span>
+				</a>
+			</div>
+			<div elem="item">
+				<a href="#" block="service" class="type-2 type-3">
+				    <span elem="image"><img src="files/serv7-img8.jpg" alt=""></span>
+				    <span elem="container">
+				        <span elem="title">Полная перетяжка салона Audi S8</span>
+				        <div elem="text">Стоимость выполненных работ - <span elem="price">15000 ₽</span></div>
+				        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+				    </span>
+				</a>
+			</div>
+		</div>
+
+		{% include 'pagination.html' %}
+
+		<div block="banners" class="type-2">
+			<div elem="title" class="h2">Актуальное</div>
+			<div elem="items">
+			    <div block="banner">
+			        <div elem="in">
+			            <img elem="image" src="files/banner-1.jpg" alt="">
+			            <div elem="container">
+			                <div elem="title">Скидка 20% на полировку кузова до 2 мая</div>
+			                <a elem="link" href="#">Подробнее <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span></a>
+			            </div>
+			        </div>
+			    </div>
+			    <div block="banner">
+			        <div elem="in">
+			            <img elem="image" src="files/banner-2.jpg" alt="">
+			            <div elem="container">
+			                <div elem="title">Поклейка виниловой пленкой от 15 000Р</div>
+			                <a elem="link" href="#">Подробнее <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span></a>
+			            </div>
+			        </div>
+			    </div>
+		    </div>
+		</div><!-- banners -->
+
+
+		<div block="tags" class="type-2">
+		    <div elem="title" class="h2">Часто ищут</div>
+		    <div elem="items">
+		        <div elem="item">
+		            <a href="#">Ремонт сидений</a>
+		        </div>
+		        <div elem="item">
+		            <a href="#">Реставрация кожи</a>
+		        </div>
+		        <div elem="item">
+		            <a href="#">Пошив руля на BMW</a>
+		        </div>
+		        <div elem="item">
+		            <a href="#">Ремонт сидений</a>
+		        </div>
+		        <div elem="item">
+		            <a href="#">Поклейка пленкой</a>
+		        </div>
+		        <div elem="item">
+		            <a href="#">Пошив руля кожей</a>
+		        </div>
+		        <div elem="item">
+		            <a href="#">Установка ксеоновых линз</a>
+		        </div>
+		        <div elem="item">
+		            <a href="#">Пошив руля кожей</a>
+		        </div>
+		    </div>
+		</div><!-- tags -->
+
+
+
+	</div>
+
+
+{% endblock %}
+

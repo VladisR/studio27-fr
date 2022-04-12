@@ -1,0 +1,95 @@
+.price-list
+    color #000
+    margin-bottom 23px
+    &__title
+        font-family $fonts.base
+        font-size 25px
+        margin-bottom 30px
+        font-weight 400
+    table
+        border-collapse: collapse;
+        min-width 640px
+        width 100%
+        td,
+        th
+            &:first-child
+                padding-left 0
+        td
+            &:first-child
+                white-space normal
+
+        th
+            font-weight 300
+            font-size 15px
+            text-align left
+            border-bottom 2px solid  #78DF44
+            white-space nowrap
+            padding-bottom 14px
+            padding-left 28px
+        td
+            color: #000;
+            font-size 15px
+            font-weight 500
+            padding-left 28px
+            letter-spacing: -0.03em;
+            padding-top 8px
+            padding-bottom 8px
+            border-top 1px solid rgba(#A0ADBF, 0.5)
+            white-space nowrap
+            > span
+                color: #665F5F;
+                font-weight 300
+                font-size 14px
+                display block
+                line-height 0.9
+    .tooltip
+        &__dropdown
+            bottom auto
+            top 100%
+            margin-bottom 0
+            margin-top 10px
+
+    .site-button
+        min-width 256px
+        font-size 19px
+        .svg-icon
+            width 30px
+            height 18px
+            margin-left 34px
+
+    @media (min-width: $mq.lg)
+        margin-bottom 38px
+        &__title
+            font-size 50px
+            margin-bottom 22px
+        table
+            th, td
+                padding-top 17px
+                padding-bottom 17px
+            th
+                font-size 17px
+                border-top 2px solid  #78DF44
+                border-bottom 1px solid  #A0ADBF
+            td
+                font-size 18px
+                font-weight 500
+                > span
+                    font-size 16px
+                    display inline
+                    margin-left 15px
+        .site-button
+            font-size 21px
+            min-width 290px
+            .svg-icon
+                width 35px
+                height 23px
+                margin-left 39px
+.table-wrapper
+    overflow-y auto
+    margin-bottom 22px
+    padding-bottom 14px
+    &::-webkit-scrollbar
+        height 6px
+    &::-webkit-scrollbar-thumb { height: 50px; background-color: #D5D5D5;}
+    // &::-webkit-scrollbar-track {  background-color: none; }
+

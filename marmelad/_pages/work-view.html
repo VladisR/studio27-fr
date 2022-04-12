@@ -1,0 +1,184 @@
+= yaml =
+pageTitle: Проекты
+bodyClasses: dark-menu
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+= yaml =
+
+{% extends 'app.html' %}
+
+{% set hideMenu = false %}
+
+{% block main %}
+	<div class="container">
+		<div block="paths">
+		    <a href="#">Услуги</a>
+		    <span class="separator">/</span>
+		    <a href="#">Пошив (автоателье)</a>
+		    <span class="separator">/</span>
+		    <span>Пошив (автоателье)</span>
+		</div>
+		<!-- paths -->
+		<h1 class="h1 type-2">Бронирование лобового стекла BMW G30 (2019) пленкой Clearplex</h1>
+
+		<div block="gallery">
+			<div elem="item">
+				<img src="files/gal-img1.jpg" alt="">
+			</div>
+			<div elem="item">
+				<img src="files/gal-img2.jpg" alt="">
+			</div>
+		</div><!--gallery-->
+
+		<div block="description">
+		    <h2 elem="title">Готовим пленку к поклейке.</h2>
+		    <div elem="text">
+			    В нашем автосервисе можно не только улучшить или отремонтировать автосвет, но и забронировать стекла или кузов, что, собственно, и пожелал осуществить владелец автомобиля BMW G30 (2019) – требовалось затянуть бронепленкой лобовое стекло, защитив его тем самым от формирования царапин, потертостей и сколов.
+		    </div>
+		</div><!-- description -->
+
+
+		<div block="gallery" class="type-2">
+			<div elem="item">
+				<img src="files/gal2-img1.jpg" alt="">
+			</div>
+			<div elem="item">
+				<img src="files/gal2-img2.jpg" alt="">
+			</div>
+			<div elem="item">
+				<img src="files/gal2-img2.jpg" alt="">
+			</div>
+		</div><!--gallery-->
+
+		<div block="description">
+		    <h2 elem="title">Готовим пленку к поклейке.</h2>
+		    <div elem="text">
+				Пленка Clearplex – это надежная защита на долгие годы, так как полиуретан, из которого она производится, гораздо плотней винила; из него также производятся бюджетные «бронепленки» (именно что в кавычках), толком не защищающие от различного физического воздействия оклеенные ими поверхности. Что касается полиуретана на лобовом стекле, то, безусловно
+		    </div>
+		</div><!-- description -->
+
+		<div block="gallery">
+			<div elem="item">
+				<img src="files/gal3-img1.jpg" alt="">
+			</div>
+			<div elem="item">
+				<img src="files/gal3-img2.jpg" alt="">
+			</div>
+		</div><!--gallery-->
+
+		{% include 'work-performed.html' %}
+
+		<div block="messengers" class="type-2 type-3">
+		    <div elem="title">Получите бесплатную консультацию </div>
+		    <div elem="items">
+		        <a elem="item" class="whatsapp" href="#">
+		            <div elem="item-icon">
+		                <img src="files/whatsapp.svg" alt="">
+		            </div>
+		            <div elem="item-name"><span class="t-nm">Whatsapp</span> {{ _icon('arr-r2', { tag: 'span' }) }}</div>
+		        </a>
+		        <a elem="item" class="telegram" href="#">
+		            <div elem="item-icon">
+		                <img src="files/tg-2.svg" alt="">
+		            </div>
+		            <div elem="item-name"><span class="t-nm">Telegram</span> {{ _icon('arr-r2', { tag: 'span' }) }}</div>
+		        </a>
+		    </div>
+		    <div elem="text">Будем рады ответить на любые вопросы</div>
+		</div><!-- messengers -->
+
+
+	</div>
+
+	<div block="list-block" class="type-2 type-5">
+	    <div elem="in" class="container">
+	        <div elem="head">
+	        	<div elem="head-row">
+		            <h2 elem="title" class="h2">
+		            	Еще Проекты по BMW
+		            </h2>
+		            <img src="files/f-img2.png" alt="">
+	            </div>
+	            <span elem="overtitle">Выполненые работы по пошиву салона</span>
+	        </div>
+	        <div elem="container" class="swiper-parent">
+	            <div elem="items" class="js-list-carousel2 swiper">
+	                <div elem="items-in" class="swiper-wrapper">
+	                	{% for i in range(0, 2) %}
+						<a href="#" block="service" class="type-2 swiper-slide">
+						    <span elem="image"><img src="files/serv5-img1.jpg" alt=""></span>
+						    <span elem="container">
+						        <span elem="title">Полная перетяжка салона BMW Z650</span>
+						        <div elem="text">Стоимость услуг -  7,800 руб</div>
+						        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+						    </span>
+						</a>
+						<a href="#" block="service" class="type-2 swiper-slide">
+						    <span elem="image"><img src="files/serv5-img2.jpg" alt=""></span>
+						    <span elem="container">
+						        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+						        <div elem="text">Стоимость услуг -  21,000 руб</div>
+						        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+						    </span>
+						</a>
+						<a href="#" block="service" class="type-2 swiper-slide">
+						    <span elem="image"><img src="files/serv5-img3.jpg" alt=""></span>
+						    <span elem="container">
+						        <span elem="title">Полная перетяжка салона BMW Z650</span>
+						        <div elem="text">Стоимость услуг -  7,800 руб</div>
+						        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+						    </span>
+						</a>
+						<a href="#" block="service" class="type-2 swiper-slide">
+						    <span elem="image"><img src="files/serv5-img4.jpg" alt=""></span>
+						    <span elem="container">
+						        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+						        <div elem="text">Стоимость услуг -  21,000 руб</div>
+						        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+						    </span>
+						</a>
+						{% endfor %}
+	                </div>
+                    <div class="swiper-button swiper-button-prev">{{ _icon('arr-l3', { tag: 'span' }) }}</div>
+                    <div class="swiper-button swiper-button-next">{{ _icon('arr-r3', { tag: 'span' }) }}</div>
+	                <div class="swiper-scrollbar desctop-visible color2"></div>
+	                <div class="swiper-pagination desctop-hide"></div>
+	            </div>
+	        </div>
+	    </div>
+	</div><!-- list-block -->
+
+	<div class="container">
+
+		<div block="banners" class="type-2">
+			<div elem="title" class="h2">Актуальное</div>
+			<div elem="items">
+			    <div block="banner">
+			        <div elem="in">
+			            <img elem="image" src="files/banner-1.jpg" alt="">
+			            <div elem="container">
+			                <div elem="title">Скидка 20% на полировку кузова до 2 мая</div>
+			                <a elem="link" href="#">Подробнее <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span></a>
+			            </div>
+			        </div>
+			    </div>
+			    <div block="banner">
+			        <div elem="in">
+			            <img elem="image" src="files/banner-2.jpg" alt="">
+			            <div elem="container">
+			                <div elem="title">Поклейка виниловой пленкой от 15 000Р</div>
+			                <a elem="link" href="#">Подробнее <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span></a>
+			            </div>
+			        </div>
+			    </div>
+		    </div>
+		</div><!-- banners -->
+
+	</div>
+
+
+{% endblock %}
+
