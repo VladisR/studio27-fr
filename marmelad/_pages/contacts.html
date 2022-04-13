@@ -1,0 +1,46 @@
+= yaml =
+pageTitle: Контакты
+bodyClasses: dark-menu
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+= yaml =
+
+{% extends 'app.html' %}
+
+{% set hideMenu = false %}
+
+{% block main %}
+	<div class="container">
+		{% include 'contacts.html' %}
+	</div>
+
+	<div block="address" class="type-2">
+	    <div elem="map">
+	        <div elem="map-content">
+	        	<div elem="centered" class="container">
+	        		<div elem="centered-in">
+			            <div elem="map-buttons">
+			                <div elem="map-btn" class="btn-plus">{{ _icon('plus2', { tag: 'span' }) }}</div>
+			                <div elem="map-btn" class="btn-minus">{{ _icon('minus', { tag: 'span' }) }}</div>
+			                <div elem="map-btn" mods="fullscreen">
+			                    {{ _icon('fullscreen', { tag: 'span' }) }}
+			                    {{ _icon('close', { tag: 'span' }) }}
+			                </div>
+			            </div>
+		            </div>
+	            </div>
+	            <div elem="map-in" id="map"></div>
+	        </div>
+	    </div>
+	    <div class="container">
+	    	<a href="#" class="site-button">Записаться на услугу {{ _icon('arr-r3', { tag: 'span' }) }}</a>
+	    </div>
+	</div>
+
+
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvxGHYNiUzRXCYRoYxuacudDWe7g8ghFw&sensor=false"></script>
+{% endblock %}
+

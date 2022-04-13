@@ -1,0 +1,148 @@
+= yaml =
+pageTitle: Пошив руля
+bodyClasses:
+layout: !!map
+    header: true
+    footer: true
+    left: false
+    right: false
+= yaml =
+
+{% extends 'app.html' %}
+
+{% set hideMenu = true %}
+
+{% block main %}
+	<div block="intro-in" class="type-2" style="background-image: url(files/in-t-bg2.jpg);">
+	    <div elem="container" class="container">
+			<div block="paths">
+			    <a href="#">Услуги</a>
+			    <span class="separator">/</span>
+			    <a href="#">Пошив (автоателье)</a>
+			    <span class="separator">/</span>
+			    <span>Пошив (автоателье)</span>
+			</div><!-- paths -->
+	        <div elem="text">
+	            <h1 class="h1">О техцентре</h1>
+	            <div class="undertitle">Комплекс услуг по обслуживанию и детейлинг вашего авто</div>
+	        </div>
+	    </div>
+	</div><!-- intro-in -->
+
+	<div class="container">
+
+		<div class="text type-2">
+			В работе по пошиву салонов мы используем только качественные и долговечные материалы, которые проверены не только временем, но и прошедшие испытания в лабораторных условиях.
+		</div>
+
+		<div class="c-separator"></div>
+
+		<p>
+			<br>
+			Пошив салонов мы используем только качественные и долговечные материалы, которые проверены не только
+			<br>
+			временем, но и прошедшие испытания в лабораторных условиях. В настоящее время для пошива салонов
+			<br>
+			автомобилей мы используем эко кожу коллекций Dakota и Nappa.
+			<br>
+			<br>
+		</p>
+
+		{% include 'advantages.html' %}
+
+		<div class="text type-2">
+			Нам доверяют более 1000 клиентов более 10 лет мы обслуживаем на высшем уровне
+		</div>
+
+			<div block="image-block" class="type-1">
+			    <div elem="col" mods="image">
+			        <img src="files/text-bl-img4.jpg" alt="">
+			    </div>
+			    <div elem="col" mods="text">
+			        <div elem="text">
+			        	<P>
+							Пошив салонов мы используем только <br> качественные и долговечные материалы, которые <br> проверены не только временем, но и прошедшие <br> испытания в лабораторных условиях.
+			        	</P>
+			        	<P>
+							В настоящее время для пошива салонов <br> автомобилей мы используем эко кожу коллекций <br> Dakota и Nappa.
+			        	</P>
+			        </div>
+			    </div>
+			</div><!-- image-block -->
+
+		<div class="c-separator"></div>
+	</div>
+
+		<div block="list-block" class="type-2">
+		    <div elem="in" class="container">
+		        <div elem="head">
+		        	<div elem="head-row">
+			            <h2 elem="title" class="h2">
+			            	Большой опыт
+			            </h2>
+		            </div>
+		            <span elem="overtitle">
+		            	В настоящее время для пошива салонов автомобилей мы используем эко кожу коллекций Dakota и Nappa.
+		            </span>
+		        </div>
+		        <div elem="container" class="swiper-parent">
+		            <div elem="items" class="js-list-carousel swiper">
+		                <div elem="items-in" class="swiper-wrapper">
+		                	{% for i in range(0, 2) %}
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img1.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Полная перетяжка салона BMW Z650</span>
+							        <div elem="text">Стоимость услуг -  7,800 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img2.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+							        <div elem="text">Стоимость услуг -  21,000 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img3.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Полная перетяжка салона BMW Z650</span>
+							        <div elem="text">Стоимость услуг -  7,800 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img4.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+							        <div elem="text">Стоимость услуг -  21,000 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							<a href="#" block="service" class="type-2 swiper-slide">
+							    <span elem="image"><img src="files/serv3-img5.jpg" alt=""></span>
+							    <span elem="container">
+							        <span elem="title">Установка светодиодов в ПТФ Toyota Fortuner II</span>
+							        <div elem="text">Стоимость услуг -  21,000 руб</div>
+							        <span class="site-button arrow">{{ _icon('arr-r2', { tag: 'span' }) }}</span>
+							    </span>
+							</a>
+							{% endfor %}
+		                </div>
+	                    <div class="swiper-button swiper-button-prev">{{ _icon('arr-l3', { tag: 'span' }) }}</div>
+	                    <div class="swiper-button swiper-button-next">{{ _icon('arr-r3', { tag: 'span' }) }}</div>
+		                <div class="swiper-scrollbar desctop-visible color2"></div>
+		            </div>
+		        </div>
+		    </div>
+		</div><!-- list-block -->
+
+	<div class="container">
+		{% include 'address.html' %}
+	</div>
+	{% include 'map-fullscreen.html' %}
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvxGHYNiUzRXCYRoYxuacudDWe7g8ghFw&sensor=false&callback=initMap"></script> -->
+{% endblock %}
+

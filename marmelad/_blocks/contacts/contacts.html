@@ -1,0 +1,63 @@
+<div block="contacts">
+    <div elem="container">
+        <div elem="title">Телефон для связи</div>
+        <div elem="row">
+            <div elem="phone"><a href="+74951505042">+7 (495) 150 50 42</a></div>
+            <div block="social-links">
+                <a elem="item" href="#"><img src="files/whatsapp.svg" alt=""></a>
+                <a elem="item" href="#"><img src="files/tg-2.svg" alt=""></a>
+            </div><!-- social-links -->
+        </div>
+        <div elem="work">
+            <div elem="work-icon" class="icon-style">{{ _icon('time', { tag: 'span' }) }}</div>
+            с 9 - 20:00 без выходных!
+        </div>
+    </div>
+    <div elem="container" mods="address">
+        <div elem="title">Адреса техцентров</div>
+        <div elem="address">
+            <div elem="address-icon">{{ _icon('location-marker', { tag: 'span' }) }}</div>
+            <div elem="address-container">
+                г. Москва, ул. Мельникова, д. 5
+                <div elem="address-note">Техцентр Север</div>
+            </div>
+            <a href="#" elem="address-icon" class="icon-style">{{ _icon('arr-r4', { tag: 'span' }) }}</a>
+        </div>
+        <div elem="address" class="type-2">
+            <div elem="address-icon">{{ _icon('location-marker', { tag: 'span' }) }}</div>
+            <div elem="address-container">
+                г. Москва, ул. Твардовского д. 8к5
+                <div elem="address-note">Техцентр Север</div>
+            </div>
+            <a href="#" elem="address-icon" class="icon-style">{{ _icon('arr-r4', { tag: 'span' }) }}</a>
+        </div>
+    </div>
+    <div block="locations">
+
+        <div block="location" class="js-location" data-lat="55.72513461190498" data-lng="37.67456808493443" data-id="location1" data-icon="img/map-marker2.svg">
+            <div elem="close">{{ _icon('close', { tag: 'span' }) }}</div>
+            <div elem="container">
+                <div elem="icon">{{ _icon('location-marker', { tag: 'span' }) }}</div>
+                <div elem="text">
+                  г. Москва, ул. Твардовского, 8к5
+                  <div elem="phone"><a href="tel:+74951505042">+7 (495) 150 50 42</a></div>
+                </div>
+            </div>
+            <a href="#" elem="button" target="blank">Построить маршрут Google map</a>
+            <a href="#" elem="button" target="blank">Построить маршрут Яндекс Карты</a>
+        </div>
+
+        <div block="location" class="js-location" data-lat="55.79919555444575" data-lng="37.39100411377238" data-id="location2" data-icon="img/map-marker3.svg">
+            <div elem="close">{{ _icon('close', { tag: 'span' }) }}</div>
+            <div elem="container">
+                <div elem="icon">{{ _icon('location-marker', { tag: 'span' }) }}</div>
+                <div elem="text">
+                  г. Москва ул. Мельникова, д. 5
+                  <div elem="phone"><a href="tel:+74951505042">+7 (495) 150 50 42</a></div>
+                </div>
+            </div>
+            <a href="#" elem="button" target="blank">Построить маршрут Google map</a>
+            <a href="#" elem="button" target="blank">Построить маршрут Яндекс Карты</a>
+        </div>
+    </div>
+</div><!-- contacts -->

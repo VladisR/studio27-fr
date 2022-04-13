@@ -1,0 +1,215 @@
+.contacts
+    color #000
+    &__container
+        margin-bottom 35px
+    &__title
+        color #9A9A9A
+        margin-bottom 13px
+        font-size 22px
+        font-weight 300
+        letter-spacing: -0.02em;
+    &__phone
+        letter-spacing: -0.01em;
+        font-size 29px
+        font-weight 500
+        line-height 1
+        margin-bottom 6px
+        a
+            color #000
+            text-decoration none
+    &__work
+        display flex
+        align-items center
+        font-size 17px
+        font-weight 300
+        &-icon
+            margin-right 16px
+    .icon-style
+        flex none
+        width 52px
+        height 46px
+        background: #FFFFFF;
+        box-shadow: 8.46868px 11.0093px 11.8561px rgba(169, 189, 200, 0.11);
+        border-radius: 25.406px;
+        display flex
+        align-items center
+        justify-content center
+        .svg-icon
+            display block
+            fill none
+            &--time
+                width 16px
+                height 16px
+                fill #09BA8F
+            &--arr-r4
+                width 16px
+                height 12px
+                fill #1561F3
+    &__container
+        &--address
+            & ^[0]
+                &__title
+                    padding-bottom 20px
+                    position relative
+                    margin-bottom 15px
+                    &:after
+                        content ''
+                        position absolute
+                        left 0
+                        right 0
+                        bottom 0
+                        height 2px
+                        background: linear-gradient(79.99deg, #78D4FB -34.26%, #09BA8F 72.3%);
+
+    &__address
+        display flex
+        letter-spacing: -0.01em;
+        font-size 23px
+        color #000
+        font-weight 500
+        margin-bottom 47px
+        &-icon
+            &.icon-style
+                margin-top 0
+                margin-left auto
+                &:hover
+                    background #1561F3
+                    .svg-icon
+                        fill #fff
+        &.type-2
+            & ^[0]
+                &__address
+                    &-icon
+                        &.icon-style
+                            &:hover
+                                background #09BA8F
+                                .svg-icon
+                                    fill #fff
+                        .svg-icon
+                            &--location-marker
+                                fill #09BA8F
+                        &.icon-style
+                            .svg-icon
+                                &--arr-r4
+                                    fill #09BA8F
+        &-icon
+            margin-right 14px
+            margin-top 5px
+            flex npne
+            .svg-icon
+                display block
+                &--location-marker
+                    fill #1561F3
+        &-container
+            padding-right 20px
+        &-note
+            letter-spacing: -0.01em;
+            font-weight 300
+            color: #A2A2A2;
+            font-size 15px
+            margin-top 13px
+
+    .social-links
+        display none
+
+    @media (min-width: $mq.md)
+        display flex
+        margin-top 20px
+        &__container
+            flex 1
+            margin-bottom 0
+
+        .social-links
+            display flex
+            margin-top 20px
+            margin-bottom 25px
+            &__item
+                display flex
+                align-items center
+                justify-content center
+                width 45px
+                height 45px
+                margin-right 10px
+                background: #FFFFFF;
+                box-shadow: 8.59094px 11.1682px 12.0273px rgba(169, 189, 200, 0.11);
+                img
+                    max-width 22px
+
+    @media (min-width: $mq.lg)
+        margin-top 0
+        margin-bottom 30px
+        &__title
+            font-size 29px
+            margin-bottom 58px
+        &__row
+            display flex
+            align-items center
+            margin-bottom 10px
+        &__phone
+            margin-bottom 0
+        .social-links
+            margin-left 30px
+            margin-top 0
+            margin-bottom 0
+        &__container
+            &--address
+                & ^[0]
+                    &__title
+                        margin-bottom 40px
+                        padding-bottom 25px
+        &__work
+            font-size 21px
+        &__address
+            border-bottom 1px solid #E9E9E9
+            padding-bottom 15px
+            margin-bottom 16px
+            padding-right 25px
+            &:last-child
+                border 0
+            &-icon
+                order 1
+                margin-right 0
+                margin-left auto
+                &.icon-style
+                    display none
+            &-note
+                font-size 20px
+                margin-top 8px
+    @media (min-width: $mq.xxxl)
+        &__container
+            &--address
+                margin-left 40px
+        &__phone
+            font-size 50px
+        .social-links
+            margin-left auto
+            &__item
+                width 89px
+                height 79px
+                img
+                    max-width 40px
+                    width 100%
+        &__address
+            font-size 30px
+            margin-bottom 30px
+            padding-right 60px
+            &-icon
+                .svg-icon
+                    width 33px
+                    height 39px
+
+    @media (min-width: $mq.sd)
+        &__container
+            &--address
+                margin-left 69px
+
+        .social-links
+            margin-left 66px
+
+        .icon-style
+            width 62px
+            height 55px
+            .svg-icon
+                &--time
+                    width 18px
+                    height 18px
