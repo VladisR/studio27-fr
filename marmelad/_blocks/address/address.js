@@ -251,3 +251,19 @@ if($('.address').length) {
         });
     };
 }
+
+$(document).on('keydown', function (evt) {
+    if (evt.keyCode == 27) {
+        $('.locations').removeClass('is-opened')
+        $('.location').removeClass('is-opened')
+    }
+});
+
+$(document).on('click', function (e) {
+    if ($(e.target).closest('.location, .address__map-in').length) {
+      return;
+    }
+    $('.locations').removeClass('is-opened')
+    $('.location').removeClass('is-opened')
+
+});

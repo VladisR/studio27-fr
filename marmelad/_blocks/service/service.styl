@@ -4,6 +4,10 @@
     text-decoration none
     height auto
     &:hover
+        & ^[0]
+            &__image
+                img
+                    transform scale(1.04)
         .site-button
             border-color transparent
             &:after
@@ -12,9 +16,11 @@
 
     &__image
         margin-bottom 13px
+        overflow hidden
         img
             display block
             width 100%
+            transition 0.3s ease transform
     &__container
         padding-left 15px
         padding-right 45px

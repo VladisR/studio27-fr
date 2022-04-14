@@ -5,3 +5,11 @@ $(document).on('scroll', function(){
         $('.header__fixed').removeClass('visible')
     }
 });
+
+$(document).on('scroll', function(){
+    if($(document).scrollTop() > $('.intro, .intro-in').innerHeight() / 2) {
+        $('.header__menu').addClass('white')
+    } else {
+        $('.header__menu').removeClass('white')
+    }
+});

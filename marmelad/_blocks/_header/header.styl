@@ -619,3 +619,21 @@
                 color #000
         @media (min-width: $mq.lg)
             padding-top 185px
+
+.header
+    // padding-top 84px
+    &__menu
+        &.white
+            &:after
+                content ''
+                position absolute
+                left 0
+                top 0
+                right 0
+                bottom 0
+                z-index -1
+                background #fff
+            > ul > li > a
+                color #000
+    // @media (min-width: $mq.lg)
+    //     padding-top 185px
